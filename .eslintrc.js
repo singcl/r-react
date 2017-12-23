@@ -15,6 +15,7 @@ module.exports = {
     "node": true
   },
   "settings": {
+    // https://github.com/benmosher/eslint-plugin-import
     "import/parser": "babel-eslint",
     "import/resolver": {
       "webpack": {
@@ -40,6 +41,7 @@ module.exports = {
       "optionalDependencies": false,
       "peerDependencies": false
     }],
+    "import/extensions": [".js", ".jsx"],
     // 强制无分号
     "semi": [2, "never"],
     "indent": ["error", 2],
