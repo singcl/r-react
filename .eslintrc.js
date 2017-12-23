@@ -1,4 +1,4 @@
-{
+module.exports = {
   // http://eslint.cn/docs/user-guide/configuring
   "extends": ["airbnb"],
   "parser": "babel-eslint",
