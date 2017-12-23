@@ -1,6 +1,7 @@
 module.exports = {
   // http://eslint.cn/docs/user-guide/configuring
-  "extends": ["airbnb"],
+  // https://github.com/evcohen/eslint-plugin-jsx-a11y
+  "extends": ["airbnb", "plugin:jsx-a11y/recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2016,
@@ -25,6 +26,7 @@ module.exports = {
       }
     }
   },
+  "plugins": ["jsx-a11y"],
   "rules": {
     // 允许js后缀
     // eslint-plugin-react
@@ -46,6 +48,12 @@ module.exports = {
     "semi": [2, "never"],
     "indent": ["error", 2],
     "comma-dangle": ["warn", "never"],
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ /*"Link"*/ ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "noHref", "invalidHref", "preferButton" ]
+    }]
   }
 }

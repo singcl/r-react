@@ -1,15 +1,41 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
+
+// import jsx后缀不能省略
+import Author from '@/components/author.jsx'
+import Category from '@/components/category.jsx'
+import Book from '@/components/book.jsx'
+
 import '../styles/index.scss'
 
-class App extends Component {
-  render() {
-    return (
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <div> Hello World </div>
+//         <div>hello China</div>
+//       </div>
+//     )
+//   }
+// }
+function App() {
+  return (
+    <Router>
       <div>
-        <div> Hello World </div>
-        <div>hello China</div>
+        <div>
+          <Link to="/author">作者</Link>
+          <Link to="/category">分类</Link>
+          <Link to="/book">书籍</Link>
+        </div>
+
+        <div>
+          <Route path="/author" component={Author} />
+          <Route path="/category" component={Category} />
+          <Route path="/book" component={Book} />
+        </div>
       </div>
-    )
-  }
+    </Router>
+  )
 }
 
 export default App
