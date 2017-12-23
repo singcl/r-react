@@ -16,5 +16,6 @@ router.get('/app.js', async (ctx) => {
 app.use(router.routes())
 
 app.listen(3000, () => {
+  /* eslint 'no-console': 'off' */
   console.log('server running on http://localhost:3000')
 })
