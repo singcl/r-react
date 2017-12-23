@@ -7,6 +7,9 @@ import Category from '@/components/category.jsx'
 import Book from '@/components/book.jsx'
 
 import '@/styles/index.scss'
+// 和引入js文件一样
+import _header from '@/styles/header.scss'
+import _menu from '@/styles/menu.scss'
 
 // class App extends Component {
 //   render() {
@@ -22,13 +25,14 @@ function App() {
   return (
     <Router>
       <div>
-        <div>
+        {/* 和使用对象一样使用类名 */}
+        <div className={_header.container}>
           <Link to="/author">作者</Link>
           <Link to="/category">分类</Link>
           <Link to="/book">书籍</Link>
         </div>
-
-        <div>
+        {/* eslint-disable dot-notation */}
+        <div className={_menu['container']}>
           <Route path="/author" component={Author} />
           <Route path="/category" component={Category} />
           <Route path="/book" component={Book} />

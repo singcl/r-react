@@ -95,6 +95,7 @@ module.exports = {
         loader: 'css-loader',
 
         // 开启了CSS Module功能，避免类名冲突问题
+        // 这个的配置是 "文件名-类名"，比较简单，实际项目中，可以加入hash，例如'[local]-[hash:base64:5]'
         options: {
           modules: true,
           localIdentName: '[name]-[local]'
