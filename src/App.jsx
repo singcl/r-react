@@ -6,7 +6,7 @@ import Author from '@/components/author.jsx'
 import Category from '@/components/category.jsx'
 import Book from '@/components/book.jsx'
 
-import '../styles/index.scss'
+import '@/styles/index.scss'
 
 // class App extends Component {
 //   render() {
