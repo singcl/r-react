@@ -1,1 +1,3 @@
 build/**/*
+demo/react-dom.js
+demo/react-with-addons.js

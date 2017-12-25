@@ -2,9 +2,9 @@ import React from 'react'
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
 // import jsx后缀不能省略
-import Author from '@/components/author.jsx'
-import Category from '@/components/category.jsx'
-import Book from '@/components/book.jsx'
+import Author from '@/components/author/index.jsx'
+import Category from '@/components/category/index.jsx'
+import Book from '@/components/book/index.jsx'
 
 import '@/styles/index.scss'
 // 和引入js文件一样
