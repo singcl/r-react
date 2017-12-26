@@ -66,7 +66,7 @@ module.exports = {
             // 开启了CSS Module功能，避免类名冲突问题
             options: {
               modules: true,
-              localIdentName: '[name]-[local]'
+              localIdentName: '[local]-[hash:base64:5]'
             }
           },
 
