@@ -1,6 +1,5 @@
-// import React from 'react'
-// 要么把React import进来，要么把这个规则disable掉
-/* eslint-disable react/react-in-jsx-scope */
+// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+// 要么把React import进来，要么把react/react-in-jsx-scope这个规则disable掉
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
