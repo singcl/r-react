@@ -1,6 +1,7 @@
 module.exports = {
   // http://eslint.cn/docs/user-guide/configuring
   // https://github.com/evcohen/eslint-plugin-jsx-a11y
+  // eslint-plugin-react插件如何引入：https://github.com/yannickcr/eslint-plugin-react
   "extends": ["airbnb", "plugin:jsx-a11y/recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
